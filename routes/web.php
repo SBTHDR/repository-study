@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [CustomerController::class, 'index']);
+Route::get('/customers/{customerId}', [CustomerController::class, 'show']);
