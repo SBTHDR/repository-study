@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 use App\Models\Customer;
 
-class CustomerRepository
+class CustomerRepository implements CustomerRepositoryInterface
 {
     public function all()
     {
