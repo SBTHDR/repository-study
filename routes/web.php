@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [CustomerController::class, 'index']);
 Route::get('/customers/{customerId}', [CustomerController::class, 'show']);
+Route::get('/customers/{customerId}/update', [CustomerController::class, 'update']);
+Route::get('/customers/{customerId}/delete', [CustomerController::class, 'destroy']);
